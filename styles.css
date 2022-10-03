@@ -5,6 +5,12 @@
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
   
   h1 {
     display: flex;
@@ -14,13 +20,14 @@
   }
   
   .container {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 50%;
     border: 1px black solid;
   }
   
   .news-list {
     padding: 1.5em;
+    max-width: 100%;
   }
 
   p, li {

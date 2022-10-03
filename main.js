@@ -32,11 +32,11 @@ const getData = () => {
         p.textContent = article.title;
         a.setAttribute("href", article.url);
         a.setAttribute("target", "_blank");
-        a.textContent = "Link to article";
+        a.textContent = "Link to Article";
         li.appendChild(a);
+        newsList.appendChild(br);
         newsList.appendChild(p);
         newsList.appendChild(li);
-        newsList.appendChild(br);
       })
   }).catch(err => console.error(err));
 }
