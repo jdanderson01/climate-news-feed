@@ -23,15 +23,20 @@ const getData = () => {
     return response.json();
   }).then( data => {
       console.log(data)
-      let uniqueArticles = removeDuplicates(data, "title")
+      let uniqueArticles = removeDuplicates(data, "url")
       uniqueArticles.forEach(article => {
+        let p = document.createElement("p");
         let li = document.createElement("li");
         let a = document.createElement("a");
+        let br = document.createElement("br");
+        p.textContent = article.title;
         a.setAttribute("href", article.url);
         a.setAttribute("target", "_blank");
-        a.textContent = article.title;
+        a.textContent = "Link to article";
         li.appendChild(a);
+        newsList.appendChild(p);
         newsList.appendChild(li);
+        newsList.appendChild(br);
       })
   }).catch(err => console.error(err));
 }
