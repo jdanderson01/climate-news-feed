@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-image: url("/assets/earth-background-two.jpeg");
+    background-image: url("assets/earth-background-two.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: round;
