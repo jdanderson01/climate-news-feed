@@ -10,6 +10,11 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    background-image: url("/assets/earth-background-two.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: round;
+    height: 100vh;
   }
   
   h1 {
@@ -17,6 +22,7 @@
     justify-content: center;
     font-size: 2rem;
     margin: .5em;
+    color: white;
   }
   
   .container {
@@ -28,6 +34,7 @@
   .news-list {
     padding: 1.5em;
     max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.8)
   }
 
   p, li {
