@@ -1,1 +1,3 @@
 # climate-news-feed
+
+A simple climate change related news feed that uses the Environment News Live API from RapidAPI.
