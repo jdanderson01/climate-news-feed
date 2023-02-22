@@ -1,48 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-image: url("assets/earth-background-two.jpeg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-color: black;
-  }
-  
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    margin: .5em;
-    color: white;
-  }
-  
-  .container {
-    margin: 0 auto;
-    max-width: 50%;
-    border: 1px black solid;
-  }
-  
-  .news-list {
-    padding: 1.5em;
-    max-width: 100%;
-    background-color: rgba(255, 255, 255, 0.8)
-  }
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("assets/earth-background-two.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: black;
+}
 
-  p, li {
-    display: flex;
-    justify-content: center;
-  }
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0.5em;
+  color: white;
+}
 
-  li {
-    text-decoration: none;
-  }
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px black solid;
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 33%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card a {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.card a:hover {
+  background-color: #1565c0;
+}
