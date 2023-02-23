@@ -13,15 +13,11 @@ const options = {
 };
 
 const getData = () => {
-  fetch(
-    "https://environment-news-live.p.rapidapi.com/?source=Nasa%20Climate&limit=50&exclude=The%20Guardian",
-    options
-  )
+  fetch("https://climate-news-feed.p.rapidapi.com/?limit=100", options)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       data.articles.forEach((article) => {
         console.log(article.title);
         console.log(article.url);

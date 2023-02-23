@@ -10,12 +10,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url("assets/earth-background-two.jpeg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right, #00bfa5, #2196f3) black;
   height: 100vh;
-  background-color: black;
 }
 
 h1 {
@@ -73,4 +69,10 @@ h1 {
 
 .card a:hover {
   background-color: #1565c0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
 }
